@@ -1,0 +1,52 @@
+/* -------------------------------------- *
+General Styles
+* --------------------------------------- */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:rgb(128, 128, 128);
+  }
+  
+  h1 {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
+}
+  h2,
+  h3 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 30px;
+    color: teal;
+}
+ 
+  main{
+    padding-left: 50px;
+    padding-right: 900px;
+  }
+
+  header h1,
+  nav div {
+    width: auto;
+    margin: 0px;
+  }
+  header {
+    padding: 40px 0;
+  }
+  nav a {
+    padding-right: 0px;
+    color: white;
+    padding: 30px;
+  }
+  nav a:hover {
+    color: #333;
+  }
+  nav {
+    background-color: rgb(132, 219, 215);
+    padding: 20px;
+    padding-right: 0px;
+  }
+  section {
+      padding-bottom: 10px;
+  }
