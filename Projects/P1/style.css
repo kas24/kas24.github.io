@@ -5,6 +5,36 @@ body {
     overflow: scroll;
 }
 
+main {
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    padding-top: 95px;
+    margin-bottom: -10px;
+    position: relative;
+    color: black;
+
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+p{
+    padding-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    kerning: 1px;
+}
+
 nav {
     
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -94,7 +124,7 @@ img.header {
 }
 
 footer{
-    position: absolute;
+    position: static;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
@@ -102,10 +132,11 @@ footer{
     padding: 10px 0px;
     background-color: teal;
     width: 100vw;
-    bottom: 0%;
+    bottom: 0vw;
 }
 
 footer > a {
+    position: relative;
     color: white;
     border: none;
     border-radius: 10px;
@@ -113,6 +144,7 @@ footer > a {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    bottom: 0vw;
 }
 
 footer > a:hover {
