@@ -1,20 +1,29 @@
+/* Main page set-up */
+
 body {
+    min-width: 800px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     color: black;
     overflow: scroll;
 }
 
+header > nav {
+    flex-shrink: inherit;
+}
+
 main {
+    margin-top: 100px;
     margin-inline-start: 300px;
     margin-inline-end: 300px;
+    min-width: 800px;
 }
 
 h1 {
+    margin-block-start: 0px;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     font-size: 40px;
-    padding-top: 95px;
     margin-bottom: -10px;
     position: relative;
     color: black;
@@ -32,11 +41,9 @@ p{
     padding-bottom: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    kerning: 1px;
 }
 
 nav {
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     text-align: center;
@@ -51,6 +58,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* Top Navigation Bar and Button Settings */
 
 nav > a.home {
     font-size: 25px;
@@ -108,11 +117,14 @@ a.footer {
     width: 100vw;
 } */
 
+/* Top Bar Image */
+
 img.header {
     contain: content;
     margin: 5px -20px;
     position: absolute;
     width: 100vw;
+    min-width: 800px;
     height: 60px;
     object-fit: cover;
     object-position: 80% 87%;
@@ -122,6 +134,8 @@ img.header {
     position: relative;
     min-height: 100vh;
 }
+
+/* Footer Navigation Bar */
 
 footer{
     position: static;
@@ -163,4 +177,61 @@ footer > a:hover {
 @keyframes buttontwo {
     0%      {background-color: teal; color: white;}
     100%    {background-color: white; color: teal;}
+}
+
+/* Image settings */
+/* Biography */
+
+img.bank {
+    display: inline-block;
+    vertical-align: top;
+    contain: content;
+    width: 300px;
+    object-fit: cover;
+    position: relative;
+}
+
+p.bank_container {
+    margin-top: -35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 15px;
+    position: absolute;
+    width: 285px;
+    height: 10px;
+    background-color: black;
+    opacity: 75%;
+    color: white;
+}
+
+p.bank_container:hover {
+    background-color: gray;
+    opacity: 50%;
+}
+
+#biography.col-left { 
+    padding-right: 20px;
+}
+
+main.biography {
+    display: flex;
+}
+
+/* Philosophy */
+
+main.philosophy {
+    display: flex;
+}
+
+#philosophy.col-left { 
+    padding-right: 20px;
+}
+
+img.pond {
+    position: absolute, right;
+    width: 500px;
+    opacity: 50%;
+    display: inline;
 }
