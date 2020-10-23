@@ -189,6 +189,7 @@ img.bank {
     width: 300px;
     object-fit: cover;
     position: relative;
+    z-index: 1;
 }
 
 p.bank_container {
@@ -202,14 +203,11 @@ p.bank_container {
     width: 285px;
     height: 10px;
     background-color: black;
-    opacity: 75%;
+    opacity: .75;
     color: white;
+    z-index: 2;
 }
 
-p.bank_container:hover {
-    background-color: gray;
-    opacity: 50%;
-}
 
 #biography.col-left { 
     padding-right: 20px;
@@ -219,19 +217,93 @@ main.biography {
     display: flex;
 }
 
+
 /* Philosophy */
+
+article#philosophy {
+    z-index: 3;
+}
 
 main.philosophy {
     display: flex;
 }
 
-#philosophy.col-left { 
-    padding-right: 20px;
+main.philosophy {
+    margin-top: 140px;
+    margin-bottom: 80px;
 }
 
 img.pond {
-    position: absolute, right;
+    margin-top: -10px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
     width: 500px;
     opacity: 50%;
     display: inline;
+}
+
+img.pond:hover {
+    opacity: 1;
+    z-index: 4;
+}
+
+.buttonphoto {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 328px;
+    padding-right: 307px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    visibility: hidden;
+    opacity: 1;
+    z-index: 5;
+}
+
+div.container:hover p.buttonphoto {
+    visibility: visible;
+    opacity: 1;
+}
+/* p.buttonphoto:hover {
+    visibility: visible;
+    opacity: 1;
+} */
+
+p.philosophy {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    width: 500px;
+}
+
+article#philosophy {
+    margin-right: -300px;
+}
+
+/* Index */
+
+main.monet {
+    display: flex;
+}
+
+#monet.col-left { 
+    padding-right: 20px;
+    position: relative;
+    margin-right: 300px;
+    padding-bottom: 80px;
+}
+
+section#monet {
+    display: inline;
+}
+
+img.portrait {
+    width: 300px;
+    margin-top: -470px;
+    margin-left: 500px;
+    position: absolute;
+    display: inline-block;
 }
