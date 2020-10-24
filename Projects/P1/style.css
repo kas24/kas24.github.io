@@ -6,6 +6,8 @@ body {
     font-size: 15px;
     color: black;
     overflow: scroll;
+    margin: 0;
+    *box-model: border-box
 }
 
 header > nav {
