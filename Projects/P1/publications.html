@@ -22,11 +22,42 @@
             <img class = "header" src="/kas24.github.io/Projects/P1/images/Waterlilies_Bridge_1899.jpg" alt="">
         </div>
     </header>
-        <h1>Publications</h1>
-
     <main>
-
+        <h1>Publications</h1>
+            <h2>A Few Examples of Monet's Work:</h2>
     </main>
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Sunrise.jpg" class="publications">
+      <div class="text">Impression, Sunrise. 1872.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Picnic.jpg" class="publications">
+      <div class="text">The Picnic (Fragment). 1865–1866.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Waterlilies_Bridge_1899.jpg" class="publications">
+      <div class="text">Bridge over a Pond of Water Lilies. 1899.</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
     <footer>
         <a class="buttontwo" class="footer" href="impressionism.html">Impressionism</a>
@@ -35,4 +66,34 @@
 
     </footer>
 
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
 </body>
