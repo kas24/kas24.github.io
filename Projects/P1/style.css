@@ -193,7 +193,7 @@ img.bank {
 }
 
 p.bank_container {
-    width: 400px;
+    width: 300px;
     margin-top: -35px;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -201,7 +201,7 @@ p.bank_container {
     text-align: left;
     padding-left: 15px;
     position: absolute;
-    height: 10px;
+    height: 20px;
     background-color: black;
     opacity: .75;
     color: white;
