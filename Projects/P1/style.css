@@ -208,9 +208,6 @@ p.bank_container {
     z-index: 2;
 }
 
-p.bank_container:hover {
-    opacity: 20%;
-}
 
 #biography.col-left { 
     padding-right: 20px;
