@@ -32,3 +32,19 @@ nav {
   background-color: #ccc;
   padding: 12px;
 }
+
+fieldset {
+  width: 200px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 5%;
+}
+
+legend {
+  background-color: #fff;
+    border: 2px solid;
+    width: fit-content;
+    margin-top: -35px;
+    padding: 5px;
+}

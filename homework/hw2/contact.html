@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me!</title>
+    <link rel="stylesheet" href="/kas24.github.io/css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Katie Storment</h1>
+    </header>
+    <nav>
+      <div><a href="/kas24.github.io/index.html">Home</a><a href="/kas24.github.io/design-journal.html">Design Journal</a><a href="/kas24.github.io/homework.html">Homework</a><a href="/kas24.github.io/Projects/P1">Project 1</a><a href="contact.html">Contact</a></div>
+    </nav>
+    <main>
+        <fieldset>
+            <form action="https://getsimpleform.com/messages?form_api_token=485b7c7dc6cd226603c2ab031dc0c864" method="post">
+                <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+                <input type='hidden' name='redirect_to' value="https://kas24.github.io/hw2/contact.html" />
+                <!-- all your input fields here.... -->
+                <legend>Contact Me</legend>
+                <p>
+                    Name
+                    <input type='text' name='name' />
+                </p>
+                <p>
+                    Phone Number
+                    <input type="phone" name="phone">
+                </p>
+                <p>
+                    Email
+                    <input type="email" name="email">
+                </p>
+                <input type='submit' value='Submit' />
+            </form>
+        </fieldset>
+    </main>
+    <footer></footer>
+  </body>
+</html>
