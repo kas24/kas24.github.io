@@ -1,5 +1,5 @@
 /* -------------------------------------- *
-General Styles
+Body, Text, and Basics
 * --------------------------------------- */
 body {
   margin: 0;
@@ -13,40 +13,97 @@ h3 {
   font-size: 36px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-main,
+
 header h1,
 nav div {
   width: 85%;
   margin: auto;
+  margin-left: 2%;
+  min-width: 900px;
 }
+
+main {
+  margin-left: 5%;
+  width: 80%;
+  min-width: 600px;
+}
+
 header {
-  padding: 40px 0;
+  padding: 0;
 }
+
+img#logo {
+  width: 350px;
+  padding-left: 2%;
+}
+
+/* Navigation and Links */
+
 nav a {
-  padding-right: 20px;
+  padding-right: 3%;
   text-decoration: solid;
   color: #fff;
 }
+
 nav a:hover {
   color: #333;
 }
+
 nav {
   background-color: #ccc;
-  padding: 12px;
+  padding: 8px;
+  padding-left: 2%;
 }
+
+a {
+  text-decoration: solid;
+  color: #000;
+}
+
+a:hover {
+  color: pink;
+}
+
+/* Contact Information */
 
 fieldset {
   width: 200px;
-  border: 2px solid #000;
-  border-radius: 6px;
+  border: 4px outset #cfcfcf;
+  border-radius: 20px;
   padding: 20px;
-  margin-top: 5%;
+  padding-left: 30px;
+  margin-top: 50px;
 }
 
 legend {
   background-color: #fff;
-    border: 2px solid;
-    width: fit-content;
-    margin-top: -35px;
-    padding: 5px;
+  border: 3px outset #cfcfcf;
+  border-radius: 15px;
+  width: fit-content;
+  margin-top: -35px;
+  margin-left: -34px;
+  padding: 10px 20px;
+}
+
+::placeholder {
+  color: #cfcfcf;
+}
+
+.form-textbox {
+  border-radius: 5px;
+  border: 1px ;
+  border: 2px outset;
+  padding: 5px;
+}
+
+input.contact-submit-button {
+  border-radius: 5px;
+  border: 1px ;
+  border: 2px outset;
+  padding: 5px;
+}
+
+input.contact-submit-button:hover {
+  background-color: #cfcfcf;
+  color: #fff;
 }
