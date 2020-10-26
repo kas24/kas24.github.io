@@ -24,6 +24,8 @@ header {
 }
 nav a {
   padding-right: 20px;
+  text-decoration: solid;
+  color: #fff;
 }
 nav a:hover {
   color: #333;
