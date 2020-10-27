@@ -11,7 +11,19 @@ h1,
 h2,
 h3 {
   font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin-block-start: 50px;
+  margin-block-end: -15px;
+}
+
+p,
+a,
+li{
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 header h1,
@@ -83,6 +95,9 @@ legend {
   margin-top: -35px;
   margin-left: -34px;
   padding: 10px 20px;
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 ::placeholder {
