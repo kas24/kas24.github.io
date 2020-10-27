@@ -85,6 +85,7 @@ fieldset {
   padding: 20px;
   padding-left: 30px;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 legend {
@@ -106,9 +107,30 @@ legend {
 
 .form-textbox {
   border-radius: 5px;
+  width: 200px;
   border: 1px ;
   border: 2px outset;
   padding: 5px;
+  margin-right: 20px;
+  outline: none;
+  color: #333;
+}
+
+.form-textarea {
+  width: 200px;
+  height: 75px;
+  border-radius: 5px;
+  border: 1px ;
+  border: 2px outset;
+  padding: 5px;
+  padding-bottom: 20px;
+  outline: none;
+  resize: none;
+  overflow-y: scroll;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.33px;
+  font-weight: 400;
 }
 
 input.contact-submit-button {
