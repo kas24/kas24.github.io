@@ -116,7 +116,7 @@ legend {
   color: #333;
 }
 
-.form-textarea {
+textarea {
   width: 200px;
   height: 75px;
   border-radius: 5px;
