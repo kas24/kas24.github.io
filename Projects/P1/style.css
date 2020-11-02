@@ -1,5 +1,4 @@
 /* Main page set-up */
-
 body {
     min-width: 800px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -16,13 +15,12 @@ header > nav {
 
 main {
     margin-top: 100px;
-    margin-inline-start: 300px;
-    margin-inline-end: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
     min-width: 800px;
 }
 
 h1 {
-    margin-block-start: 0px;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     font-size: 40px;
@@ -55,8 +53,8 @@ nav {
 
 a {
     display: inline-block;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     color: black;
 }
@@ -144,7 +142,8 @@ footer{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
-    margin: 5px -20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     padding: 10px 0px;
     background-color: teal;
     width: 100vw;
@@ -192,6 +191,8 @@ img.bank {
     object-fit: cover;
     position: relative;
     z-index: 1;
+    margin-right: 20px;
+    margin-top: 42px;
 }
 
 p.bank_container {
@@ -219,7 +220,7 @@ main.biography {
     display: flex;
 }
 
-section.biography > p#b {
+section.biography > p {
     padding-bottom: 0px;
 }
 
@@ -298,6 +299,7 @@ p.monet {
     position: relative;
     margin-right: 325px;
     padding-bottom: 200px;
+    padding-right: 20px;
 }
 
 section#monet {
@@ -476,4 +478,3 @@ img.publications {
   from {opacity: .4}
   to {opacity: 1}
 }
-
