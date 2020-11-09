@@ -6,7 +6,7 @@ body {
     color: black;
     overflow: scroll;
     margin: 0;
-    *box-model: border-box
+    *box-model: border-box;
 }
 
 header > nav {
