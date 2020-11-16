@@ -305,6 +305,7 @@ a#reserve {
 
     a.button:hover {
         padding: 15px 1vw;
+        padding-bottom: 15px;
     }
 
     a#reserve {
