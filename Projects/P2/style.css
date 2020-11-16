@@ -250,6 +250,7 @@ a#reserve {
 
     a.button:hover {
         padding: 15px 1.25vw;
+        z-index: 3;
     }
 
     div.section > h1 {
