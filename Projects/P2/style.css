@@ -227,7 +227,8 @@ a#reserve {
     ul.nav {
         list-style-type: none;
         margin-top: -15px;
-        z-index: 3;
+        margin-block-end: 15px;
+        z-index: 2;
     }
 
     li {
@@ -246,11 +247,11 @@ a#reserve {
         font-size: 18px;
         padding-left: 1.25vw;
         padding-right: 1.25vw;
+        z-index: 3;
     }
 
     a.button:hover {
         padding: 15px 1.25vw;
-        z-index: 3;
     }
 
     div.section > h1 {
