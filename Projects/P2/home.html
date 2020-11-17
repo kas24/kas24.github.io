@@ -11,9 +11,9 @@
 <body>
     <nav class="header">
 
-        <img id="header" class="logo" src="Images/logo_with_padding.png" alt="Logo">
+        <a href="home.html"><img id="header" class="logo" src="Images/logo_with_padding.png" alt="Logo"></a>
 
-            <div class="hamburger"><a href="#" onclick="burgerTime()">|||</a></div>
+            <div class="hamburger"><a onclick="burgerTime()">|||</a></div>
             <ul id="nav" class="nav hide-desktop">
                 <li id="contact"><a class="button" href="contact.html">Contact</a></li>
                 <li><a class="button" href="reserve.html">Reserve</a></li>
@@ -32,9 +32,68 @@
         <a id="reserve" class="button" href="reserve.html">Reserve</a>
     </div>
 
-    <div class="section2">
-        <img src="Images/liquor.jpg" alt="Liqour Wall">
-    </div>    
+    <div class="grid">
+
+        <div class="section2">
+            <img class="bar" src="Images/liquor.jpg" alt="Liqour Wall">
+            <h1>
+                <section>PRIVATE</section>
+                <section>EVENTS</section>
+            </h1>
+            <a id="areas" class="button" href="contact.html">Check Out Our Areas →</a>
+        </div>
+
+        <div class="section3">
+
+            <h2>HOURS</h2>
+                <p class="subtitles">*Closed on Major Holidays</p>
+            <div class="schedule">
+                <article class="days">
+                    <ul>
+                        <li>Mon-Thurs</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                        <li>Sunday</li>
+                        <li>Happy Hour</li>
+                        <li>Dinner Nightly</li>
+                    </ul>
+                </article>
+
+                <article class="times">
+                    <ul> 
+                        <li>10am–12am</li>
+                        <li>10am–2:30am</li>
+                        <li>9am–2:30am</li>
+                        <li>9am–12am</li>
+                        <li>3pm–5pm</li>
+                        <li>3pm–10pm</li>
+                    </ul>
+                </article>
+            </div>
+
+            <h2>TAP ROOM (21+)</h2>
+                <p class="subtitles">*Late Night Food & Drink Menu starts at 10pm!</p>
+            <div class="schedule">
+                <article class="days">
+                    <ul> 
+                        <li>Mon-Sat</li>
+                        <li>Sunday</li>
+                    </ul> 
+                </article>
+
+                <article class="times">
+                    <ul> 
+                        <li>Opens @6pm</li>
+                        <li>Opens @4pm</li>
+                    </ul> 
+                </article>
+            </div>
+
+        </div>  
+
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
