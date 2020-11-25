@@ -12,12 +12,10 @@
         border: 2px solid #ffffff;
         background-color: rgba(0,0,0, 0.6);
         font-size: 5vw;
-        padding-left: 6vw;
-        padding-right: 5vw;
+        padding-right: 3.5vw;
     }
 
     a.button:hover {
-        padding-right: 100vw;
         color: #000000;
         background-color: #ffffff;
         transition: ease-in .50s;
@@ -56,8 +54,6 @@
 
     article.days ul,
     article.times ul {
-        margin-block-start: 0;
-        margin-block-end: 0;
         font-family: sofia-pro, sans-serif;
         font-style: normal;
         display: flex;
@@ -101,6 +97,14 @@
         flex-direction: column;
     }
 
+    div.section > h1 {
+        margin: 0 auto;
+        z-index: 2;
+        line-height: 85%;
+        font-size: 9vw;
+        margin-top: -40vh;
+    }
+
     div.section2 {
         height: 50vh;
     }
@@ -117,12 +121,21 @@
     div.section3 {
         padding: 5vw;
         padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-left: 10vw;
+        padding-bottom: 25vw;
         margin: 0 auto;
-        width: 50vw;
-        height: 55vh;        
-        min-width: 350px;
-        z-index: ;
+        min-width: 80vw;
+        max-height: 600px;
+    }
+
+    div.section3 h2 {
+        font-size: 6vw;
+    }
+
+    div.section3 p, 
+    div.schedule article {
+        margin: 0;
+        font-size: 3vw;
     }
 
     div.grid {
@@ -133,15 +146,8 @@
         z-index: 3;
     }
 
-    div.section > h1 {
-        margin: 0 auto;
-        z-index: 2;
-        line-height: 85%;
-        font-size: 9vw;
-        margin-top: -40vh;
-    }
-
     div.schedule {
+        margin-top: -1vh;
         display: flex;
         position: relative;
     }
@@ -177,11 +183,11 @@
     }
 
     h2 {
-        margin-block-end: 0;
         font-family: sofia-pro, sans-serif;
         font-weight: 600;
         font-style: normal;
         color: #000000;
+        margin-bottom: 0;
     }
 
     h3 {
@@ -244,19 +250,18 @@
         height: 55vh;
     }
 
-    li {
-        padding-top: 15px;
-        text-align: right;
-        padding-right: 2vw;
-    }
-
-    li#contact{
-        padding-top: 35px;
+    li > a.button {
+        float: right;
+        border: none;
+        padding-left: 90%;
+        padding-right: 10%;
+        font-size: 2vw;
     }
 
     nav.header {
         background-color: #000000;
         position: relative;
+        width: 100vw;
         right: 0;
         left: 0;
         padding-top: 15px;
@@ -270,10 +275,6 @@
         padding: 7px 12px;
     }
 
-    li > a.button {
-        border: none;
-    }
-
     p {
         font-family: sofia-pro, sans-serif;
         font-weight: 600;
@@ -283,19 +284,28 @@
 
     p.subtitles {
         margin-top: 0;
-        margin-block-end: .5vh;
         font-family: sofia-pro, sans-serif;
         font-weight: 400;
         color: #000000;
     }
 
     ul#nav {
-        padding-inline-start: 0px;
+        position: relative;
         width: 100vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+
     }
 
     ul#nav li {
+        padding-top: 25px;
         display: block;
+    }
+
+    ul#nav li a {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-size: 3vw;
     }
 
 /*// Media Queries //*/
@@ -353,7 +363,18 @@
         padding-top: 5vh;
         height: 50vh;
         padding-bottom: 0vh;
-        max-width: 500px;        
+        max-width: 500px; 
+        min-width: 350px;       
+    }
+
+    div.section3 h2 {
+        font-size: 18px;
+    }
+
+    div.section3 p, 
+    div.schedule article {
+        margin: 0;
+        font-size: 16px;
     }
 
     div.hamburger {
@@ -361,10 +382,12 @@
     }
 
     div.grid {
+        position: relative;
         display: flex;
         flex-wrap: nowrap;
         border-top: 5px solid black;
         border-bottom: 5px solid black;
+        right: 0;
     }
 
     .hide-desktop {
@@ -386,21 +409,36 @@
 
     li {
         padding-top: 0px;
-        padding-right: 0;
         float: right;
+    }
+
+    li > a.button {
+        font-size: 2vw;
+        border: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.4);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 1vw;
+        padding-left: 1vw;
     }
 
     li#contact{
         padding-top: 0px;
-        padding-right: 2vw;
     }
+    
 
     nav.header {
         padding-bottom: 0px;
+        padding-top: 1vh;
+
     }
 
     #nav {
         display: block;
+    }
+
+    ul {
+        margin-bottom: 0px;
     }
 
     ul#nav li {
@@ -410,8 +448,26 @@
     ul#nav {
         list-style-type: none;
         margin-top: -15px;
-        margin-block-end: 15px;
         z-index: 2;
+        padding-right: 2vw;
+    }
+
+    ul#nav li {
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    ul#nav li a {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5vw;
+    }
+
+    ul#nav li a:hover {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5vw;
     }
 
     ul#nav, .hamburger {
@@ -461,5 +517,10 @@
 
     img#header.logo {
         width: 80px;
+    }
+
+    ul.nav li a.button {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
