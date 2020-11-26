@@ -143,3 +143,54 @@ input.contact-submit-button:hover {
   background-color: #cfcfcf;
   color: #fff;
 }
+
+ /* // SVG // */
+
+ main#bike {
+   width: 50vw;
+ }
+
+ #front_wheel,
+ #back_wheel {
+   animation: wheel 3s infinite linear;
+   transform-origin: center;
+   transform-box: fill-box;
+ }
+
+ #person {
+   animation: bike 1s ease-in-out infinite alternate;
+   transform-origin: bottom;
+ }
+
+ #hat {
+   animation: hat 1s ease-in-out infinite alternate;
+   transform-origin: center;
+   transform-box: fill-box;
+ }
+
+ @keyframes wheel {
+   from{
+     transform: rotateZ(0deg);
+   }
+   to {
+     transform: rotateZ(360deg);
+   }
+ }
+
+ @keyframes bike{
+   from{
+     transform: rotateX(0deg);
+   }
+   to{
+     transform: rotateX(12deg);
+   }
+ }
+
+ @keyframes hat {
+   from {
+     transform: translateY(0%) rotateZ(0deg);
+   }
+   to{
+     transform: translateY(35%) rotateZ(20deg);
+   }
+ }
