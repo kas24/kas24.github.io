@@ -190,3 +190,31 @@ input.contact-submit-button:hover {
      transform: translateY(35%) rotateZ(20deg);
    }
  }
+
+ div.fairy{
+   width: 100vw;
+   position: relative;
+   text-align: center;
+   padding-top: 10px;
+ }
+
+ img.fairy {
+   width: 300px;
+   padding-top: 5vw;
+   padding-bottom: 5vw;
+   display: block;
+   margin: 0 auto;
+ }
+ img.fairy:hover {
+  opacity: 50%;
+  animation: fairy-wiggle 1s ease-in-out infinite alternate;
+}
+
+@keyframes fairy-wiggle {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(50deg);
+  }
+}
