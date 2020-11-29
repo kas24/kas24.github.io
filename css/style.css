@@ -146,10 +146,6 @@ input.contact-submit-button:hover {
 
  /* // SVG // */
 
- main#bike {
-   width: 50vw;
- }
-
  #front_wheel,
  #back_wheel {
    animation: wheel 3s infinite linear;
