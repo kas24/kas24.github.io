@@ -53,31 +53,43 @@
     }
 
     article.days ul,
-    article.times ul {
+    article.times ul,
+    article.drinks ul,
+    article.prices ul {
         font-family: sofia-pro, sans-serif;
         font-style: normal;
         display: flex;
         flex-direction: column;
+        padding-inline-start: 0px;
     }
 
-    article.days ul {
+    article.days ul,
+    article.drinks ul {
         padding-left: 0;
         font-weight: 600;
     }
 
-    article.days ul li {
+    article.days ul li,
+    article.drinks ul li {
         display: inline;
         float: left;
         text-align: left;
     }
 
     article.times ul {
+        right: 0;
+    }
+
+    article.times ul
+    article.prices ul {
         font-weight: 400;
     }
 
-    article.times ul li {
+    article.times ul li,
+    article.prices ul li {
         display: inline;
         float: right;
+        padding-inline-start: 10vw;
     }
 
     article.days,
@@ -133,7 +145,8 @@
     }
 
     div.section3 p, 
-    div.schedule article {
+    div.schedule article,
+    div.type article {
         margin: 0;
         font-size: 3vw;
     }
@@ -146,7 +159,8 @@
         z-index: 3;
     }
 
-    div.schedule {
+    div.schedule,
+    div.type {
         margin-top: -1vh;
         display: flex;
         position: relative;
@@ -222,7 +236,7 @@
         width: 100%; 
         height: 500px;
     }
-    
+
     img#header.logo {
         top: 3px;
         left: 1%;
@@ -300,6 +314,11 @@
         color: #000000;
     }
 
+    ul#drinks,
+    ul#days {
+        padding-inline-start: 0px;
+    }
+
     ul#nav {
         position: relative;
         width: 100vw;
@@ -354,6 +373,13 @@
         padding: 7.5px 15px;
     }
 
+    article.times ul li,
+    article.prices ul li {
+        padding-inline-start: 5vw;
+    }
+
+    
+
     body {
         display: flex;
         flex-direction: column;
@@ -385,7 +411,8 @@
     }
 
     div.section3 p, 
-    div.schedule article {
+    div.schedule article,
+    div.type article {
         margin: 0;
         font-size: 16px;
     }
