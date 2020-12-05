@@ -102,6 +102,46 @@
         background-color: #ffffff;
     }
 
+    div.events {
+        margin: 0 auto;
+        width: 100%;
+    }
+    div.events div {
+        margin: 0 auto;
+        max-width: 500px;
+        min-width: 300px;
+        padding-top: 5vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    div.events h2 {
+        margin-top: 0;
+    }
+
+    div.events p {
+        max-width: 450px;
+    }
+
+    div.events nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.events nav img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    div.events ul {
+        margin-top: 0;
+        padding-bottom: 7vw;
+    }
+
+    div.events ul li {
+        padding-bottom: 1vh;
+    }
+
     div.section,
     div.section2 {
         position: relative;
@@ -140,7 +180,8 @@
         max-height: 600px;
     }
 
-    div.section3 h2 {
+    div.section3 h2,
+    div.events h2 {
         font-size: 6vw;
     }
 
@@ -269,6 +310,17 @@
         height: 55vh;
     }
 
+    img.sneakpeek {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        object-position: 50% 35%;
+    }
+
+    img.space {
+        border-top: 15px solid black;
+    }
+
     li > a.button {
         float: right;
         border: none;
@@ -337,10 +389,23 @@
         color: #000000;
     }
 
+    ul {
+    list-style: none;
+    float: left;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    }
+
     ul#drinks,
     ul#days {
         padding-inline-start: 0px;
         max-width: 350px;
+    }
+
+    ul.info {
+        max-width: 400px;
+        display: block;
     }
 
     ul#nav {
@@ -402,11 +467,17 @@
         padding-inline-start: 5vw;
     }
 
-    
-
     body {
         display: flex;
         flex-direction: column;
+    }
+
+    div.events h2 {
+        font-size: 50px;
+    }
+
+    div.events nav img {
+        width: 50%;
     }
 
     div.section > h1 {
@@ -472,6 +543,12 @@
     }
 
     li {
+        display: block;
+        padding-top: 0px;
+        float: left;
+    }
+
+    li.nav {
         padding-top: 0px;
         float: right;
     }
@@ -513,6 +590,7 @@
     ul#nav li {
         display: block;
         padding-top: 0px;
+        float: right;
     }
 
     ul#nav li a {
