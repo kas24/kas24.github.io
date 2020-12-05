@@ -11,3 +11,4 @@ function burgerTime() {
   var myNav = document.getElementById("nav")
    myNav.classList.toggle("hide-desktop");
 }
+
