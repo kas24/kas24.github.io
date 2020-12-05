@@ -99,7 +99,7 @@
 
     body {
         margin: 0 auto;
-        background-color: grey;
+        background-color: #ffffff;
     }
 
     div.section,
@@ -277,6 +277,25 @@
         font-size: 2vw;
     }
 
+    main.menu {
+        display: block;
+        width: 100%;
+    }
+
+    main.menu img.menu1 {
+        margin-top: 0;
+    }
+
+    main.menu img {
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100vw;
+        min-width: 350px;
+        max-width: 900px;
+        display: block;
+    }
+
+
     nav.header {
         background-color: #000000;
         position: relative;
@@ -287,6 +306,10 @@
         z-index: 3;
         padding-bottom: 43px;
         display: flex;
+    }
+
+    nav.header img.logo {
+        z-index: 4;
     }
 
     nav.indexnav {
@@ -317,6 +340,7 @@
     ul#drinks,
     ul#days {
         padding-inline-start: 0px;
+        max-width: 350px;
     }
 
     ul#nav {
