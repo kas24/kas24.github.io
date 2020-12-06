@@ -406,6 +406,8 @@
     ul.info {
         max-width: 400px;
         display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     ul#nav {
