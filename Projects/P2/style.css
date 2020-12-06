@@ -21,6 +21,10 @@
         transition: ease-in .50s;
     }
 
+    a.page {
+        color: #8a8a8a;
+    }
+
     a#reserve {
         border: solid #fff 2px;
         margin: 0 auto;
@@ -100,6 +104,15 @@
     body {
         margin: 0 auto;
         background-color: #ffffff;
+    }
+
+    div.about-us {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 5vw;
     }
 
     div.events {
@@ -223,6 +236,14 @@
         z-index: 0;
     }
 
+    footer {
+        background-color: #000000;
+        padding-left: 5vw;
+        padding-bottom: 5vh;
+        padding-top: 2vh;
+        width: 100%;
+    }
+
     h1 {
         font-family: sofia-pro, sans-serif;
         font-weight: 600;
@@ -231,12 +252,23 @@
         z-index: 3;
     }
 
+    h1.about {
+        padding-top: 0;
+        font-size: calc(25px + 2vw);
+        color: #000000;
+        margin-block-end: 0px;
+    }
+
     h2 {
         font-family: sofia-pro, sans-serif;
         font-weight: 600;
         font-style: normal;
         color: #000000;
         margin-bottom: 0;
+    }
+
+    h2.footer {
+        color: #ffffff;
     }
 
     h3 {
@@ -276,6 +308,10 @@
         display: block;
         width: 100%; 
         height: 500px;
+    }
+    
+    img.exterior {
+        width: 100%;
     }
 
     img#header.logo {
@@ -347,6 +383,10 @@
         display: block;
     }
 
+    nav.about-us {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     nav.header {
         background-color: #000000;
@@ -380,6 +420,17 @@
         font-weight: 600;
         font-style: normal;
         color: #000000;
+    }
+
+    p.about {
+        max-width: 550px !important;
+    }
+
+    p.footer,
+    p.footer a {
+        margin-bottom: 0;
+        color: #ffffff !important;
+        display: block;
     }
 
     p.subtitles {
@@ -474,8 +525,21 @@
         flex-direction: column;
     }
 
+    div.about-us {
+        max-width: 700px;
+    }
+
     div.events h2 {
         font-size: 50px;
+    }
+
+    div.events div {
+        float: left;
+        padding-top: 4vh;
+    }
+
+    div.events ul {
+        padding-bottom: 7vh;
     }
 
     div.events nav img {
@@ -539,9 +603,17 @@
         width: 100%;
         height: 55vh;
     }
+
+    img.exterior {
+        width: 100%;
+    }
     
     img#header.logo {
         width: 7vw;
+    }
+
+    img.sneakpeek {
+        height: 25vw;
     }
 
     li {
@@ -576,6 +648,10 @@
 
     #nav {
         display: block;
+    }
+
+    p.about {
+        max-width: 900px !important;
     }
 
     ul {
@@ -643,9 +719,21 @@
         padding: 7.5px 15px;
     }
 
+    div.about-us {
+        max-width: 535px;
+    }
+
+    div.events div {
+        padding-top: 3vh;
+    }
+
     div.section > h1 {
         font-size: 100px;
         margin-top: -60vh;
+    }
+
+    img.exterior {
+        width: calc(32% + 12vw);
     }
 
     img.picnic {
