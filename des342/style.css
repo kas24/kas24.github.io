@@ -1,0 +1,102 @@
+* {
+    width: 100%;
+}
+body {
+    margin: 0px 0px;
+    width: 100vw;
+}
+
+svg#title {
+    height: 85%;
+    align-items: center;
+}
+
+svg.start {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+div.svg {
+    height: 90vh;
+    width: 100vw;
+    z-index: 0;
+    position: absolute;
+    top: 5vh;
+}
+
+g#mini-star>path:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+g#med-star>path:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+g#press-title {
+    background-color: pink;
+    position: relative;
+    transform-origin: right;
+    animation-name: shift;
+    animation-duration: 2s alternate;
+}
+
+nav{
+    position: sticky;
+    height: 50px;
+    z-index: 1;
+}
+
+nav>div {
+    display: flex;
+}
+
+nav>div>a {
+    text-align: center;
+    text-decoration: none;
+}
+
+a>p:hover {
+    color: #ffe386;
+}
+
+p {
+    color: #ffad00;
+    font-family: tomarik-introvert, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img.background {
+    top: 0px;
+    padding: 0px 0px;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+}
+
+/*// Key Frames //*/
+
+@keyframes spin {
+    from{
+        transform: rotateZ(0deg);
+      }
+      to {
+        transform: rotateZ(360deg);
+      }
+}
+
+@keyframes shift {
+    from {transform: translate(0px);
+    }
+    to {transform: translate(10px)
+
+    }
+}
