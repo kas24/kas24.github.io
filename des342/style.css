@@ -1,152 +1,158 @@
 /*// Index //*/
 * {
-    width: 100%;
+  width: 100%;
 }
 body {
-    margin: 0px 0px;
-    width: 100vw;
+  margin: 0px 0px;
+  width: 100vw;
 }
 
 svg#title {
-    height: 85%;
-    align-items: center;
+  height: 85%;
+  align-items: center;
+  opacity: 1;
+  transition: all 2s;
 }
 
 svg.start {
-    width: 300px;
-    display: block;
-    margin: 0 auto;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 }
 
 div.svg {
-    height: 90vh;
-    width: 100vw;
-    z-index: 0;
-    position: absolute;
-    top: 5vh;
+  height: 90vh;
+  width: 100vw;
+  z-index: 0;
+  position: absolute;
+  top: 5vh;
 }
 
-g#mini-star>path:hover, g#med-star>path:hover {
-    animation-name: spin;
-    animation-duration: 1s;
-    transform-origin: center;
-    transform-box: fill-box;
+g#mini-star > path:hover,
+g#med-star > path:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
-svg.start>g#press-title>path {
-    background-color: pink;
-    position: relative;
-    transform-origin: right;
-    animation-name: shift;
-    animation-duration: 2s alternate;
+svg.start > g#press-title > path {
+  fill: pink;
+  position: relative;
+  transform-origin: right;
+  animation-name: shift;
+  animation-duration: 2s alternate;
 }
 
-nav{
-    position: sticky;
-    height: 50px;
-    z-index: 1;
+nav {
+  position: sticky;
+  height: 50px;
+  z-index: 1;
 }
 
-nav>div {
-    display: flex;
+nav > div {
+  display: flex;
 }
 
-nav>div>a {
-    text-align: center;
-    text-decoration: none;
+nav > div > a {
+  text-align: center;
+  text-decoration: none;
 }
 
-a>p:hover {
-    color: #ffe386;
+a > p:hover {
+  color: #ffe386;
 }
 
 p {
-    color: #ffad00;
-    font-family: tomarik-introvert, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  color: #ffad00;
+  font-family: tomarik-introvert, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 img.background {
-    top: 0px;
-    padding: 0px 0px;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
+  top: 0px;
+  padding: 0px 0px;
+  height: 105vh;
+  object-fit: cover;
+  position: absolute;
 }
 
 /*// Part One //*/
 
-svg#cluster, g#cluster {
-    fill:#ffad00;
-    width: 50px;
-    display: block;
-    position: relative;
-    z-index: 2;
-    margin: 0 auto;
+svg#cluster,
+g#cluster {
+  fill: #ffad00;
+  width: 50px;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
 }
 
-div.partone{
-    position: relative;
-    display: block;
-    z-index: 1;
-    margin-top: -40%;
-    margin-bottom: 0;
+div.partone {
+  position: relative;
+  display: block;
+  z-index: 1;
+  margin-top: -40%;
+  margin-bottom: 0;
 }
 
 div.hidden {
-    opacity: 0%;
+  opacity: 0%;
 }
 div.textone {
-    width: 330px;
-    padding-left: 2vw;
+  width: 330px;
+  padding-left: 2vw;
 }
 
-div.textone>p {
-    z-index: 2;
-    position: relative;
-    background-color: #334f70;
-    color: white;
-    border-radius: 20px;
-    padding: 25px;
+div.textone > p {
+  z-index: 2;
+  position: relative;
+  background-color: #334f70;
+  color: white;
+  border-radius: 20px;
+  padding: 25px;
 }
 
 p.cluster {
-    margin-bottom: -20px;
+  margin-bottom: -20px;
 }
 
 p.right {
-    position: absolute;
-    margin-left: 50vw;
+  position: absolute;
+  margin-left: 50vw;
 }
 
 svg#cluster {
-    position: absolute;
-    margin-left: 60vw;
+  position: absolute;
+  margin-left: 60vw;
 }
 
-svg#cluster:hover, g#cluster:hover {
-    animation-name: spin;
-    animation-duration: 1s;
-    transform-origin: center;
-    transform-box: fill-box;
+svg#cluster:hover,
+g#cluster:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 /*// Key Frames //*/
 
 @keyframes spin {
-    from{
-        transform: rotateZ(0deg);
-      }
-      to {
-        transform: rotateZ(360deg);
-      }
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 @keyframes shift {
-    from {transform: translate(0px);
-    }
-    to {transform: translate(10px)
-    }
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(10px);
+  }
 }
