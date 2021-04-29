@@ -1,3 +1,4 @@
+/*// Index //*/
 * {
     width: 100%;
 }
@@ -25,21 +26,14 @@ div.svg {
     top: 5vh;
 }
 
-g#mini-star>path:hover {
+g#mini-star>path:hover, g#med-star>path:hover {
     animation-name: spin;
     animation-duration: 1s;
     transform-origin: center;
     transform-box: fill-box;
 }
 
-g#med-star>path:hover {
-    animation-name: spin;
-    animation-duration: 1s;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-g#press-title {
+svg.start>g#press-title>path {
     background-color: pink;
     position: relative;
     transform-origin: right;
@@ -82,6 +76,63 @@ img.background {
     position: absolute;
 }
 
+/*// Part One //*/
+
+svg#cluster, g#cluster {
+    fill:#ffad00;
+    width: 50px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+div.partone{
+    position: relative;
+    display: block;
+    z-index: 1;
+    margin-top: -40%;
+    margin-bottom: 0;
+}
+
+div.hidden {
+    opacity: 0%;
+}
+div.textone {
+    width: 330px;
+    padding-left: 2vw;
+}
+
+div.textone>p {
+    z-index: 2;
+    position: relative;
+    background-color: #334f70;
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+p.cluster {
+    margin-bottom: -20px;
+}
+
+p.right {
+    position: absolute;
+    margin-left: 50vw;
+}
+
+svg#cluster {
+    position: absolute;
+    margin-left: 60vw;
+}
+
+svg#cluster:hover, g#cluster:hover {
+    animation-name: spin;
+    animation-duration: 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
 /*// Key Frames //*/
 
 @keyframes spin {
@@ -97,6 +148,5 @@ img.background {
     from {transform: translate(0px);
     }
     to {transform: translate(10px)
-
     }
 }
