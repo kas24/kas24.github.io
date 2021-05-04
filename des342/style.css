@@ -1,158 +1,223 @@
 /*// Index //*/
-* {
-  width: 100%;
-}
 body {
-  margin: 0px 0px;
-  width: 100vw;
+    position: relative;
+    margin: 0px 0px;
+    width: 100vw;
+    background-image: url(des342/images/background-1-01.png);
 }
 
-svg#title {
-  height: 85%;
-  align-items: center;
-  opacity: 1;
-  transition: all 2s;
-}
-
-svg.start {
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-}
-
-div.svg {
-  height: 90vh;
-  width: 100vw;
-  z-index: 0;
-  position: absolute;
-  top: 5vh;
-}
-
-g#mini-star > path:hover,
-g#med-star > path:hover {
-  animation-name: spin;
-  animation-duration: 1s;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-svg.start > g#press-title > path {
-  fill: pink;
-  position: relative;
-  transform-origin: right;
-  animation-name: shift;
-  animation-duration: 2s alternate;
-}
+img.background {
+    z-index: -1;
+    top: 0px;
+    padding: 0px 0px;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
 
 nav {
-  position: sticky;
-  height: 50px;
-  z-index: 1;
+    position: sticky;
+    width: 90%;
+    margin: 0 auto;
+    height: 50px;
+    z-index: 12;
 }
 
-nav > div {
+nav > div { 
   display: flex;
 }
 
 nav > div > a {
-  text-align: center;
-  text-decoration: none;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
 }
 
 a > p:hover {
   color: #ffe386;
 }
 
-p {
+a > p {
   color: #ffad00;
-  font-family: tomarik-introvert, sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-img.background {
-  top: 0px;
-  padding: 0px 0px;
-  height: 105vh;
-  object-fit: cover;
-  position: absolute;
+p {
+    font-family: tomarik-introvert, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/*// Part One //*/
+/*// Index //*/
 
-svg#cluster,
-g#cluster {
-  fill: #ffad00;
-  width: 50px;
-  display: block;
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
+div.title {
+    position: relative;
+    width: calc(100% - 15vw);
+    max-width: 900px;
+    margin: 0 auto;
+    top: 8vh;
 }
 
-div.partone {
-  position: relative;
-  display: block;
-  z-index: 1;
-  margin-top: -40%;
-  margin-bottom: 0;
+div.title > img {
+    display: block;
+    
 }
 
-div.hidden {
-  opacity: 0%;
-}
-div.textone {
-  width: 330px;
-  padding-left: 2vw;
+img.title-text {
+    width: 85%;
+    margin: 0 auto;
 }
 
-div.textone > p {
-  z-index: 2;
-  position: relative;
-  background-color: #334f70;
-  color: white;
-  border-radius: 20px;
-  padding: 25px;
+img.shoot {
+    width: 80% !important;
+    margin: 0 auto;
+    margin-right: 2vw;
 }
 
-p.cluster {
-  margin-bottom: -20px;
+img.shoot:hover {
+    animation: wiggle 1.5s linear;
 }
 
-p.right {
-  position: absolute;
-  margin-left: 50vw;
+div.press-title {
+    display: flex;
+    position: relative;
+    top: 12vh;
+    width: calc(60% - 15vw);
+    min-width: 300px;
+    margin: 0 auto;
 }
 
-svg#cluster {
-  position: absolute;
-  margin-left: 60vw;
+img.title-cluster {
+    display: block;
+    width: calc(40px + 3vw);
+    margin: 0 auto;
+    z-index: 3;
 }
 
-svg#cluster:hover,
-g#cluster:hover {
-  animation-name: spin;
-  animation-duration: 1s;
-  transform-origin: center;
-  transform-box: fill-box;
+img.title-cluster:hover,
+img.med-star:hover,
+img.mini-star:hover,
+img.cluster:hover {
+    animation: spin 1s ease-in-out;
 }
 
-/*// Key Frames //*/
-
-@keyframes spin {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
+img.start-text{
+    display: block;
+    width: 70%;
+    object-fit: contain;
+    margin: 0 auto;
+    animation: shift infinite .75s linear alternate;
 }
+
+img.mini-star {
+    display: block;
+    width: 6%;
+    margin: 0 auto;
+    margin-right: 0;
+    margin-top: -12vw;
+}
+
+img.med-star {
+    display: block;
+    width: 15%;
+}
+
+section.one {
+    z-index: 3;
+}
+
+/*// Index 2.0 //*/
+
+section.two {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    margin-bottom: 0;
+    z-index: 0;
+}
+
+img.partone {
+    position: fixed;
+    z-index: 5;
+    bottom: 0px;
+    width: 100vw;
+}
+
+p.body-text {
+    position: absolute;
+    color: #ffffff;
+    background-color: #334f70;
+    padding: 15px 25px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    z-index: 5;
+}
+
+p.body-text#one {
+    width: calc(200px + 8vw);
+    margin-left: 4vw;
+}
+
+p.body-text#two {
+    width: calc(250px + 8vw);
+    margin-top: 25vh;
+    margin-left: 60vw;
+}
+
+img.cluster {
+    position: fixed;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    opacity: 0;
+}
+
+/*// Part Two //*/
+
+img.parttwo {
+    position: absolute;
+    top: 0px;
+    min-height: 100vh;
+    overflow: scroll;
+    width: 100vw;
+    object-fit: cover;
+}
+
+section.walking-one {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+}
+
+section.walking-one>img {
+    z-index: 4;
+    height: 45vw;
+    min-height: 270px;
+    margin: 0 auto;
+    margin-top: calc(30px);
+    left: 0;
+}
+
+
+/*// Animations //*/
+/*// Index-Animations //*/
 
 @keyframes shift {
-  from {
-    transform: translate(0px);
-  }
-  to {
-    transform: translate(10px);
-  }
+    from { transform: translateX(0);}
+    to { transform: translateX(2vw);}
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(-5deg);}
+    50% { transform: rotate(5deg);}
+    75% { transform: rotate(-5deg);}
+    100% { transform: rotate(0deg);}
 }

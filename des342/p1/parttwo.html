@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/des342/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/txt5vol.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/des342/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/txt5vol.css" />
     <title>The Stars In The Sky</title>
-</head>
+  </head>
+
     <body>
+
         <nav>
-            <div><a href="/des342/p1/partone.html"><p>Part I</p></a><a href="/des342/p1/parttwo.html"><p>Part II</p></a><a href="/des342/p1/partthree.html"><p>Part III</p></a><a href="/des342/p1/partfour.html"><p>Part IV</p></a><a href="/des342/p1/partfive.html"><p>Part V</p></a><a href="/des342/p1/partsix.html"><p>Part VI</p></a></div>
+            <div><a href="/des342/p1/index.html"><p>Part I</p></a><a href="/des342/p1/parttwo.html"><p>Part II</p></a><a href="/des342/p1/partthree.html"><p>Part III</p></a><a href="/des342/p1/partfour.html"><p>Part IV</p></a><a href="/des342/p1/partfive.html"><p>Part V</p></a><a href="/des342/p1/partsix.html"><p>Part VI</p></a></div>
         </nav>
+
         <div>
-            <img class="background" src="/des342/images/background-1-01.png" alt="background">
+            <img class="background" src="/des342/images/background.png" alt="background">
         </div>
-    </body>
+
+        <div>
+            <img class="parttwo" src="/des342/images/parttwo.png" alt="parttwo">
+        </div>
+
+        <section class="walking-one">
+            <img class="walkone" src="/des342/images/walkone.png" alt="walk-one">
+            <img class="walktwo" src="/des342/images/walktwo.png" alt="walk-two">
+            <img class="walkthree" src="/des342/images/walkthree.png" alt="walk-three">
+        </section>
+
+        <section>
+            <p id="start" class="body-text">She walked a far, far way, and then farther still, until she came to a mill wheel, creaking and grinding away.
+                "Good evening," she said to the mill wheel. 
+                "I would like to play with the stars in the sky. Have you seen any near here?"<img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></p>
+            <p class="body-text"> </p>
+        </section>
+
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("img.walkone").css("opacity", ".50");
+        $("img.walktwo").css("opacity", ".75");
+        $("p#start.body-text").css("opacity", "1")
+      })
+    </script>
+    
+
 </html>
