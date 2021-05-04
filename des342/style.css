@@ -97,8 +97,9 @@ img.title-cluster {
 img.title-cluster:hover,
 img.med-star:hover,
 img.mini-star:hover,
-img.cluster:hover {
-    animation: spin 1s ease-in-out;
+img.cluster:hover,
+img.clusterparttwo:hover {
+    animation: spin 1s infinite linear;
 }
 
 img.start-text{
@@ -151,13 +152,13 @@ p.body-text {
     padding: 15px 25px;
     padding-bottom: 20px;
     border-radius: 20px;
-    opacity: 0;
     z-index: 5;
 }
 
 p.body-text#one {
     width: calc(200px + 8vw);
     margin-left: 4vw;
+    
 }
 
 p.body-text#two {
@@ -175,6 +176,13 @@ img.cluster {
 }
 
 /*// Part Two //*/
+
+img.clusterparttwo {
+    position: absolute;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
 
 img.parttwo {
     position: absolute;
@@ -200,6 +208,74 @@ section.walking-one>img {
     left: 0;
 }
 
+p.body-text#start {
+    margin-top: -225px;
+    width: calc(200px + 8vw);
+    margin-left: 4vw;
+}
+
+p.body-text#next {
+    opacity: 0;
+    width: calc(150px + 8vw);
+    margin-top: calc(10px + -40vh);
+    margin-left: 60vw;
+    background-color: #00234c;
+}
+
+p.parttwo {
+    width: calc(150px + 8vw);
+    margin-top: calc(10px + -30vh);
+    margin-left: 4vw;
+    opacity: 0;
+}
+
+section.splash {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 25vh;
+    width: 100%;
+    height: calc(100px + 5vh);
+    z-index: 4;
+}
+
+img.splash {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    object-fit: contain;
+    opacity: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img.river {
+    display: block;
+    margin-top: calc(-200px + -25vw);
+    min-height: 200px;
+    width: 100%;
+    opacity: 0;
+}
+
+p.body-text.parttwothree {
+    width: calc(100px + 8vw);
+    margin-top: calc(10px + -60vh);
+    margin-left: 55vw;
+    opacity: 0;
+}
+
+p.body-text.parttwofour {
+    width: calc(100px + 8vw);
+    margin-top: calc(10px + -40vh);
+    margin-left: 60vw;
+    opacity: 0;
+    background-color: #00234c;
+}
+
+a>img.cluster {
+    position: absolute;
+}
 
 /*// Animations //*/
 /*// Index-Animations //*/

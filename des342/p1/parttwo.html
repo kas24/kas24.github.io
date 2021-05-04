@@ -29,12 +29,37 @@
             <img class="walkthree" src="/des342/images/walkthree.png" alt="walk-three">
         </section>
 
-        <section>
+        <section class="flex">
+            <p id="next" class="body-text">"Ah, yes," groaned the old mill wheel. 
+                <br>"Every night they shine in my face from the surface of this pond until I cannot sleep. Jump in, my lass, and you will find them."
+                <img onClick="audioscroll" class= "clusterparttwo sound" src="/des342/images/cluster.svg" alt="cluster">
+            </p>
             <p id="start" class="body-text">She walked a far, far way, and then farther still, until she came to a mill wheel, creaking and grinding away.
-                "Good evening," she said to the mill wheel. 
-                "I would like to play with the stars in the sky. Have you seen any near here?"<img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></p>
-            <p class="body-text"> </p>
+                <br>"Good evening," she said to the mill wheel. 
+                <br>"I would like to play with the stars in the sky. Have you seen any near here?"
+                <img onclick="next" id="fade" class= "clusterparttwo" src="/des342/images/cluster.svg" alt="cluster">
+            </p>
         </section>
+
+        <section id="splash" class="splash">
+            <img class="splash" src="/des342/images/splash.png" alt="splash">
+            <p class="body-text parttwo">
+                The little girl jumped into the pond and swam around until her arms were so tired she could swim no longer, but she could not find any stars.
+                <img onClick="audioscroll" class= "clusterparttwo next" src="/des342/images/cluster.svg" alt="cluster">
+            </p>
+            <p class="body-text parttwothree">
+                "Excuse me," she called to the old mill wheel, <br> "but I don't believe there are any stars here after all!"
+            </p>
+            <p class="body-text parttwofour">
+                "Well, there certainly were before you jumped in and stirred the water up," the mill wheel called back. 
+                <a href="/des342/p1/partthree.html"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a>
+            </p>
+            <img class="river" src="/des342/images/rivertwo.png" alt="river">
+        </section>
+
+        <audio id="audio_play">
+            <source src="/des342/images/splash.mp3" type="audio/ogg" />
+        </audio>
 
     <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -42,9 +67,43 @@
       $(document).ready(function () {
         $("img.walkone").css("opacity", ".50");
         $("img.walktwo").css("opacity", ".75");
-        $("p#start.body-text").css("opacity", "1")
+        $("p#start.body-text").css("opacity", "1");
+        $("img.cluster").css("opacity", "1");
       })
+
+        $(document).ready(function () {
+        $("img#fade.clusterparttwo").click(function(next){
+            $("p.body-text#next").css("opacity", "1");
+        });
+        });
+
+        $(document).ready(function(){
+        $('img.clusterparttwo.sound').click(function(audioscroll){
+                var elmnt = document.getElementById("splash");
+                    elmnt.scrollIntoView();
+        });
+        });
+
+        $(document).ready(function(){
+        $('img.clusterparttwo.sound').click(function(audioscroll){
+            $("img.splash").css("opacity", "1");
+            $("p.parttwo").css("opacity", "1");
+            document.getElementById('audio_play').play(); return false;
+        });
+        });
+
+        $(document).ready(function(){
+            $('img.clusterparttwo.next').click(function(splashout){
+                $("img.splash").css("opacity", "0");
+                $("img.river").css("opacity", "1");
+                $("p.body-text.parttwothree").css("opacity", "1");
+                $("p.body-text.parttwofour").css("opacity", "1");
+                $("img.cluster").css("opacity", "1");
+
+        });
+        });
+
+
     </script>
-    
 
 </html>

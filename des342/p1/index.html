@@ -39,7 +39,7 @@
         </div>
   
         <div class="press-title">
-          <img class="title-cluster" onclick="function" src="/des342/images/cluster.svg" alt="cluster">
+          <img class="title-cluster" onclick="fade" src="/des342/images/cluster.svg" alt="cluster">
           <img class="start-text" src="/des342/images/start-text.png" alt="start-text">
         </div>
   
@@ -51,7 +51,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-        $('img.title-cluster').click(function(){
+        $('img.title-cluster').click(function(fade){
           $("section.one").fadeOut(1000);
             $("section.two").css("opacity", "1");
               $("p.body-text").css("opacity", "1");
