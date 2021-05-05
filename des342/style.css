@@ -98,8 +98,9 @@ img.title-cluster:hover,
 img.med-star:hover,
 img.mini-star:hover,
 img.cluster:hover,
-img.clusterparttwo:hover {
-    animation: spin 1s infinite linear;
+img.clusterparttwo:hover,
+img.clusterpartthree:hover {
+    animation: spin 1s linear;
 }
 
 img.start-text{
@@ -173,11 +174,13 @@ img.cluster {
     margin-top: 20px;
     margin-left: 10px;
     opacity: 0;
+    z-index: 100;
 }
 
 /*// Part Two //*/
 
-img.clusterparttwo {
+img.clusterparttwo,
+img.clusterpartthree {
     position: absolute;
     width: 50px;
     margin-top: 20px;
@@ -275,6 +278,54 @@ p.body-text.parttwofour {
 
 a>img.cluster {
     position: absolute;
+}
+
+/*// Part Three //*/
+
+p.partthreeone {
+    width: calc(250px + 10vw);
+    margin-top: calc(10vh);
+    margin-left: 10vw;
+    opacity: 1;
+}
+
+p.partthreetwo,
+p.partthreefive {
+    width: calc(150px + 10vw);
+    margin-top: 5vh;
+    margin-left: 45vw;
+    opacity: 0;
+}
+
+p.partthreethree,
+p.partthreesix {
+    width: calc(150px + 10vw);
+    margin-top: 25vh;
+    margin-left: 50vw;
+    opacity: 0;
+    background-color: #00234c;
+}
+
+p.partthreefour {
+    width: calc(250px + 10vw);
+    margin-top: calc(10vh);
+    margin-left: 10vw;
+    opacity: 0;
+}
+
+p.partthreeseven {
+    width: calc(100px + 10vw);
+    margin-top: 8vh;
+    margin-left: 73vw;
+    opacity: 0;
+}
+
+p.partthreeeight {
+    background-color: #00234c;
+    width: calc(100px + 10vw);
+    margin-top: 23vh;
+    margin-left: 75vw;
+    opacity: 0;
 }
 
 /*// Animations //*/

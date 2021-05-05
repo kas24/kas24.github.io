@@ -19,6 +19,65 @@
             <img class="background" src="/des342/images/background.png" alt="background">
         </div>
 
-    <body>
+        <section>
+          <div class="dance">
+            <p class="body-text partthreefour">So the child danced and danced, she whirled round and round in a ring with the Little Folk, but though the grass gleamed beneath her feet, she never spied a single star. Finally she could dance no longer, and she plopped down inside the ring of fairies.
+              <img onclick="startnext" id="fadenextagain" class= "clusterpartthree" src="/des342/images/cluster.svg" alt="cluster">
+            </p>
+            
+            <p class="body-text partthreefive">"I've tried and I've tried, but I can't seem to reach the stars down here," she cried. <br> "If you don't help me, I'll never find any to play with."
+            </p>
+            
+            <p class="body-text partthreesix">The fairies all whispered together. Finally one of them crept up and took her by the hand, and said: <br> "If you're really determined, you must go forward. Keep going forward, and mind you take the right road. Ask Four Feet to carry you to No Feet At All, and then tell No Feet At All to carry you to the Stairs Without Steps, and if you climb that..."
+            </p>
 
+            <p class="body-text partthreeseven">"Then I'll be among the stars in the sky?" cried the lassie.
+            </p>
+
+            <p class="body-text partthreeeight">"If you'll not be there, then you'll be somewhere else, won't you?" laughed the fairy, and he vanished with all the rest.
+              <a href="/des342/p1/partfour.html"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a>
+            </p>
+          </div>
+
+          <div class="meadow">
+            <p class="body-text partthreeone">So she climbed out and dried herself off as best she could, and set out again across the fields.
+              After a while she sat down to rest in a meadow, and it must have been a fairy meadow, because before she knew it a hundred little fairies came scampering out to dance on the grass. They were no taller than toad stools, but they were dressed in silver and gold.
+              <img onclick="start" id="fade" class= "clusterpartthree" src="/des342/images/cluster.svg" alt="cluster">
+            </p>
+            <p class="body-text partthreetwo">"Good evening, Little Folk," said the girl. <br> "I'm trying to reach the stars in the sky. Have you seen any near here?"</p>
+            <p class="body-text partthreethree">"Ah, yes," sang the fairies. <br> "They glisten every night among the blades of the grass. Come and dance with us, little lass, and you will find as many stars as you like."
+            <img onclick="next" id="fadenext" class= "clusterpartthree" src="/des342/images/cluster.svg" alt="cluster"></p>
+          </div>
+        </section>
+
+    <body>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("img#fade.clusterpartthree").click(function(start){
+          $("p.body-text.partthreetwo").css("opacity", "1");
+            $("p.body-text.partthreethree").css("opacity", "1");
+      });
+      });
+
+      $(document).ready(function () {
+        $("img#fadenext.clusterpartthree").click(function(next){
+          $("p.body-text.partthreeone").fadeOut(1000);
+            $("p.body-text.partthreetwo").fadeOut(1000);
+              $("p.body-text.partthreethree").fadeOut(1000);
+                $("p.body-text.partthreefour").css("opacity", "1");
+      });
+      });
+
+      $(document).ready(function () {
+        $("img#fadenextagain.clusterpartthree").click(function(nextagain){
+          $("p.body-text.partthreefive").css("opacity", "1");
+            $("p.body-text.partthreesix").css("opacity", "1");
+              $("p.body-text.partthreeseven").css("opacity", "1");
+                $("p.body-text.partthreeeight").css("opacity", "1");
+                  $("img.cluster").css("opacity", "1");
+      });
+      });
+    </script>
 </html>
