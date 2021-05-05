@@ -19,6 +19,10 @@
             <img class="background" src="/des342/images/background.png" alt="background">
         </div>
 
+        <div>
+          <img class="partthree" src="/des342/images/meadow.png" alt="partthree">
+        </div>
+
         <section>
           <div class="dance">
             <p class="body-text partthreefour">So the child danced and danced, she whirled round and round in a ring with the Little Folk, but though the grass gleamed beneath her feet, she never spied a single star. Finally she could dance no longer, and she plopped down inside the ring of fairies.
@@ -50,6 +54,14 @@
           </div>
         </section>
 
+        <section class="girl">
+          <img class="sittingone" src="/des342/images/sittingone.png" alt="sitpositionone">
+          <img class="fairyone" src="/des342/images/fairyone.png" alt="fairyone">
+          <img class="dancing" src="/des342/images/dancing.png" alt="dancingposition">
+          <img class="fairytwo" src="/des342/images/fairyone.png" alt="fairytwo">
+          <img class="sittingtwo" src="/des342/images/sittingtwo.png" alt="sitpositiontwo">
+        </section>
+
     <body>
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -58,6 +70,7 @@
         $("img#fade.clusterpartthree").click(function(start){
           $("p.body-text.partthreetwo").css("opacity", "1");
             $("p.body-text.partthreethree").css("opacity", "1");
+              $("img.fairyone").css("opacity", "1");
       });
       });
 
@@ -67,6 +80,8 @@
             $("p.body-text.partthreetwo").fadeOut(1000);
               $("p.body-text.partthreethree").fadeOut(1000);
                 $("p.body-text.partthreefour").css("opacity", "1");
+                  $("img.sittingone").css("opacity", "0.5");
+                    $("img.dancing").css("opacity", "1");
       });
       });
 
@@ -77,6 +92,10 @@
               $("p.body-text.partthreeseven").css("opacity", "1");
                 $("p.body-text.partthreeeight").css("opacity", "1");
                   $("img.cluster").css("opacity", "1");
+                    $("img.dancing").css("opacity", ".6");
+                      $("img.fairyone").css("opacity", ".4");
+                        $("img.sittingtwo").css("opacity", "1");
+                          $("img.fairytwo").css("opacity", "1");
       });
       });
     </script>
