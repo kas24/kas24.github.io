@@ -25,7 +25,7 @@
           <p id="one" class="body-text">Once upon a time there was a little lass who wanted nothing more than to touch the stars in the sky. On clear, moonless nights she would lean out her bedroom window, gazing up at the thousand tiny lights scattered across the heavens, wondering what it would be like to hold one in her hand.
           </p>
           <p id="two" class="body-text"> One warm summer evening, a night when the Milky Way shined more brightly than ever before, she decided she couldn't stand it any longer-she just had to touch a star or two, no matter what. So she slipped out the window and started off by herself to see if she could reach them.
-            <a href="/des342/p1/parttwo.html"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a></p>
+            <a onclick="document.getElementById('audio_play').play()" href="javascript:delay('/des342/p1/parttwo.html')"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a></p>
         </div>
       </section>
 
@@ -45,6 +45,9 @@
   
       </section>
 
+      <audio id="audio_play">
+        <source src="/des342/images/twinkle.mp3" type="audio/ogg" />
+      </audio>
 
   </body>
 
@@ -58,6 +61,20 @@
                 $("img.cluster").css("opacity", "1");
         });
         });
+
+    $(document).ready(function(){
+      $('img.title-cluster').click(function(){
+        document.getElementById('audio_play').play(); return false;
+      });
+      });
+
+    var audio = document.getElementById("audio_play");
+      audio.volume = 0.2;
+
+    function delay (URL) {
+    setTimeout( function() { window.location = URL }, 3000 );
+    }
+
   </script>
 
 </html>

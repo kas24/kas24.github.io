@@ -52,13 +52,17 @@
             </p>
             <p class="body-text parttwofour">
                 "Well, there certainly were before you jumped in and stirred the water up," the mill wheel called back. 
-                <a href="/des342/p1/partthree.html"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a>
+                <a onclick="document.getElementById('twinkle').play()" href="javascript:delay('/des342/p1/partthree.html')"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a>
             </p>
             <img class="river" src="/des342/images/rivertwo.png" alt="river">
         </section>
 
         <audio id="audio_play">
             <source src="/des342/images/splash.mp3" type="audio/ogg" />
+        </audio>
+
+        <audio id="twinkle">
+            <source src="/des342/images/twinkle.mp3" type="audio/ogg" />
         </audio>
 
     <body>
@@ -88,6 +92,8 @@
         $('img.clusterparttwo.sound').click(function(audioscroll){
             $("img.splash").css("opacity", "1");
             $("p.parttwo").css("opacity", "1");
+            $("p.body-text#next").css("opacity", "0");
+            $("p.body-text#start").css("opacity", "0");
             document.getElementById('audio_play').play(); return false;
         });
         });
@@ -103,6 +109,19 @@
         });
         });
 
+        $(document).ready(function(){
+            $('img.clusterparttwo').click(function(){
+                document.getElementById('twinkle').play(); return false;
+        });
+        });
+
+
+        var audio = document.getElementById("twinkle");
+            audio.volume = 0.2;
+
+        function delay (URL) {
+        setTimeout( function() { window.location = URL }, 3000 );
+        }
 
     </script>
 

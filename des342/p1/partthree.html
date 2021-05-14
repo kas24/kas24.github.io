@@ -39,7 +39,7 @@
             </p>
 
             <p class="body-text partthreeeight">"If you'll not be there, then you'll be somewhere else, won't you?" laughed the fairy, and he vanished with all the rest.
-              <a href="/des342/p1/partfour.html"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a>
+              <a onclick="document.getElementById('twinkle').play()" href="javascript:delay('/des342/p1/partfour.html')"><img class= "cluster" src="/des342/images/cluster.svg" alt="cluster"></a>
             </p>
           </div>
 
@@ -61,6 +61,10 @@
           <img class="fairytwo" src="/des342/images/fairyone.png" alt="fairytwo">
           <img class="sittingtwo" src="/des342/images/sittingtwo.png" alt="sitpositiontwo">
         </section>
+
+        <audio id="twinkle">
+          <source src="/des342/images/twinkle.mp3" type="audio/ogg" />
+      </audio>
 
     <body>
       
@@ -98,5 +102,19 @@
                           $("img.fairytwo").css("opacity", "1");
       });
       });
+
+      $(document).ready(function(){
+            $('img.clusterpartthree').click(function(){
+                document.getElementById('twinkle').play(); return false;
+        });
+        });
+
+      var audio = document.getElementById("twinkle");
+        audio.volume = 0.2;
+
+      function delay (URL) {
+      setTimeout( function() { window.location = URL }, 3000 );
+      }
+        
     </script>
 </html>
