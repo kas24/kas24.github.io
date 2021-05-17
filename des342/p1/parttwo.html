@@ -12,7 +12,14 @@
     <body>
 
         <nav>
-            <div><a href="/des342/p1/index.html"><p>Part I</p></a><a href="/des342/p1/parttwo.html"><p>Part II</p></a><a href="/des342/p1/partthree.html"><p>Part III</p></a><a href="/des342/p1/partfour.html"><p>Part IV</p></a><a href="/des342/p1/partfive.html"><p>Part V</p></a><a href="/des342/p1/partsix.html"><p>Part VI</p></a></div>
+            <div class="nav">
+                <a onclick="document.getElementById('selection').play()" href="javascript:delay('/des342/p1/index.html')"><p>Part I</p></a>
+                <a onclick="document.getElementById('selection').play()" href="javascript:delay('/des342/p1/parttwo.html')"><p>Part II</p></a>
+                <a onclick="document.getElementById('selection').play()" href="javascript:delay('/des342/p1/partthree.html')"><p>Part III</p></a>
+                <a onclick="document.getElementById('selection').play()" href="javascript:delay('/des342/p1/partfour.html')"><p>Part IV</p></a>
+                <a onclick="document.getElementById('selection').play()" href="javascript:delay('/des342/p1/partfive.html')"><p>Part V</p>
+                </a><a onclick="document.getElementById('selection').play()" href="javascript:delay('/des342/p1/partsix.html')"><p>Part VI</p></a>
+            </div>
         </nav>
 
         <div>
@@ -64,6 +71,10 @@
         <audio id="twinkle">
             <source src="/des342/images/twinkle.mp3" type="audio/ogg" />
         </audio>
+
+        <audio id="selection">
+            <source src="/des342/images/shimmer.mp3" type="audio/ogg" />
+          </audio>
 
     <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

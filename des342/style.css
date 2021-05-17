@@ -50,6 +50,10 @@ p {
 
 /*// Index //*/
 
+div.nav>a:hover {
+    animation: wiggle infinite .75s linear alternate;
+}
+
 div.title {
     position: relative;
     width: calc(100% - 15vw);
@@ -482,7 +486,7 @@ section.walking-one>img {
     min-height: 220px;
     margin-top: 60px;
 }
-
+}
 
 /*// Animations //*/
 /*// Index-Animations //*/
