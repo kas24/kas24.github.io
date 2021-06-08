@@ -396,6 +396,28 @@ img.sittingtwo {
     object-fit: contain;
 }
 
+/*// Part Four //*/
+
+section#four.walking-one {
+    max-width: 500px;
+    margin-left: 5vw;
+    margin-top: 30vh;
+}
+
+section#four.walking-one>img {
+    max-height: 800px;
+}
+
+img.horse {
+    width: 20vw;
+    min-width: 200px;
+    position: absolute;
+    display: block;
+    top: calc(40vh + 5vh) !important;
+    margin-left: 70vw;
+}
+
+
 
 @media only screen and (max-width: 768px) {
 
@@ -486,6 +508,69 @@ section.walking-one>img {
     min-height: 220px;
     margin-top: 60px;
 }
+}
+
+/*// Part Three //*/
+
+p.body-text.partthreeone {
+    width: 325px;
+    margin-top: calc(5vh);
+    margin-left: 10vw;
+}
+
+p.body-text.partthreetwo {
+    width: 250px;
+    margin-top: calc(40vh + 5vw);
+    margin-left: 25vw;
+}
+
+p.body-text.partthreethree {
+    width: 250px;
+    margin-top: calc(65vh);
+    margin-left: 30vw;
+}
+
+p.partthreefour {
+    width: 150px;
+    margin-top: calc(10vh);
+    margin-left: 10vw;
+}
+
+p.partthreefive {
+    width: 100px;
+    margin-top: calc(10vh);
+    margin-left: 55vw;
+}
+
+p.partthreesix {
+    width: 180px;
+    margin-top: calc(50vh);
+    margin-left: 10vw;
+}
+
+p.partthreeseven {
+    width: 100px;
+    margin-top: 40vh;
+    margin-left: 60vw;
+}
+
+p.partthreeeight {
+    width: 100px;
+    margin-top: 60vh;
+    margin-left: 60vw;
+}
+
+section#four.walking-one>img {
+    max-height: 200px;
+}
+
+section#four.walking-one {
+    margin-top: 40vh;
+}
+
+img.horse {
+    top: 45vh;
+    margin-left: 60vw;
 }
 
 /*// Animations //*/
